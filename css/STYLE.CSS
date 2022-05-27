@@ -4,7 +4,11 @@
     --background-color: #333647;
     --pink-color: #f87652;
     --secondary-color: #bbbbbb;
-    --bg-color-of-list-skill-section: #81818180;
+    --bg-color-of-list-in-skill-section: #81818180;
+    --card-bg-color: #232432;
+
+    --bg-color-for-form-inputs:#ffffff24;
+    --border-color-for-form-inputs:#c4c4c44a;
 }
 
 * {
@@ -147,7 +151,7 @@ p {
 }
 
 .hero_section .row img {
-    width: 80%;
+    width: 60%;
 }
 
 @media (max-width:1200px) and (min-width:993px) {
@@ -269,7 +273,7 @@ p {
 
 .hero_section img {
     width: 60%;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 /* about us section */
@@ -388,7 +392,7 @@ p {
 
 .skills_section .social-media-icons .list-group-item {
     border: none;
-    color: aliceblue;
+    color: white;
     border-left: 2px solid var(--pink-color);
     border-radius: 0px;
     margin: 5px 0px;
@@ -428,7 +432,9 @@ p {
     color: transparent;
 }
 
-portfolio section .portfolio-section {
+/* Portfolio section */
+
+.portfolio-section {
     background: #282a39;
     padding: 170px 0px;
 }
@@ -468,48 +474,46 @@ height: 100%;
     border: none;
 }
 
+.portfolio-section .tab-content .card img {
+    border: 2px solid white;
+}
+
 /* blog section */
-.blog-section .blog-heading {
-    padding: 50px 0;
+.blogs-section {
+    background: #282a39;
+    padding-bottom: 160px;
 }
 
-.read-more {
-    color: #f87652 !important;
+.blogs-section .card {
+    background: var(--card-bg-color);
 }
 
-.blog-section .txt {
-    font-size: 14px;
-}
-
-.blog-section .card:hover {
+.blogs-section .card:hover {
     animation: pulse;
-    animation-duration: 0.5s;
+    animation-duration: 0.1s;
 }
 
-.blog-section .card-body .title {
+.blogs-section .card-body .title {
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
-.blog-section .card-body .date {
+.blogs-section .card-body .date {
     font-size: 11px;
 }
 
-.blog-section .card-body .txt {
+.blogs-section .card-body .date span {
+    color: var(--pink-color);
+}
+
+.blogs-section .card-body .txt {
     font-size: 12px;
     color: var(--secondary-color);
 }
 
-@media (max-width:993px) and (min-width:750px) {
-    .blog-card {
-        padding-top: 15px;
-    }
-}
-
-@media (max-width:750px) and (min-width:200px) {
-    .blog-card {
-        padding-top: 15px;
-    }
+.blogs-section .card-body a {
+    color: var(--pink-color);
+    font-size: 13px;
 }
 
 /* contact section */
