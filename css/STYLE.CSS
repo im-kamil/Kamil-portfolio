@@ -11,10 +11,13 @@
     --border-color-for-form-inputs:#c4c4c44a;
 }
 
-* {
+ * {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-}
+} 
+/* html{
+    scroll-behavior: smooth;
+} */
 
 body {
     background-color: var(--background-color) !important;
